@@ -16,7 +16,7 @@ class MahasiswaController extends Controller
     {
         // $mahasiswa = DB::table('students')->get();    // cara manggil database tanpa model
 
-        $mahasiswa = \App\student::all();  //cara manggil dengan model(eloquent)
+        $mahasiswa = \App\mahasiswa::all();  //cara manggil dengan model(eloquent)
         return view('mahasiswa/index', ['mahasiswa' => $mahasiswa]);
     }
 
